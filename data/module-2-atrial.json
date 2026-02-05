@@ -1,0 +1,851 @@
+{
+  "module": "atrial",
+  "display_name": "Atrial Arrhythmias",
+  "description": "PACs, wandering pacemaker, atrial tachycardia, flutter, fibrillation, and SVT",
+  "questions": [
+    {
+      "id": "atrial-001",
+      "submodule": "pac",
+      "question_type": "clinical_vignette",
+      "difficulty": 1,
+      "stem": "A healthy 5-year-old is found to have occasional PACs on a routine ECG (3-4 per minute). The child is asymptomatic with no structural heart disease on echo. What is the most appropriate management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Start beta-blocker therapy",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Reassurance and no treatment",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Refer for catheter ablation",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Restrict physical activity",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Occasional PACs in children with structurally normal hearts are benign and extremely common. No treatment or activity restriction is needed. Concern would arise with very frequent PACs (>10% of beats), multifocal PACs, or associated symptoms.",
+      "clinical_pearl": "Isolated PACs are found in up to 50% of normal children on Holter monitoring. Reassure parents that these are not dangerous and don't cause heart damage.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "benign",
+        "pediatric"
+      ]
+    },
+    {
+      "id": "atrial-002",
+      "submodule": "pac",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "A PAC that comes very early finds the AV node or bundle branches still refractory, resulting in:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ventricular tachycardia",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Aberrant conduction with wide QRS or blocked PAC without QRS",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Complete heart block",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Retrograde conduction to the SA node",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Very early PACs may encounter refractory conduction tissue. If the right bundle recovers before the left, you get RBBB aberrancy. If the AV node is still refractory, the PAC is blocked (no QRS follows the P wave). This is a normal response, not a pathologic block.",
+      "clinical_pearl": "Blocked PACs are a common cause of apparent 'pauses' on telemetry. Look carefully for a premature P wave hiding in the preceding T wave - it explains the pause!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "aberrancy",
+        "mechanism"
+      ]
+    },
+    {
+      "id": "atrial-003",
+      "submodule": "wandering_pacemaker",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "Which ECG finding defines wandering atrial pacemaker?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P waves inverted in all leads",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Irregular R-R intervals with fibrillatory baseline",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Three or more different P wave morphologies at a rate less than 100 bpm",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Fixed PR interval with variable P wave axis",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Wandering atrial pacemaker occurs when the dominant pacemaker shifts between the SA node and other atrial foci, producing at least 3 different P wave morphologies. The rate is less than 100 bpm (distinguishes from MAT). PR intervals may vary as the pacemaker site changes.",
+      "clinical_pearl": "Key distinction: Wandering pacemaker = rate <100 bpm, usually benign. MAT = rate >100 bpm, usually associated with significant pulmonary or cardiac disease.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "differentiation"
+      ]
+    },
+    {
+      "id": "atrial-004",
+      "submodule": "wandering_pacemaker",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "The shifting of the pacemaker site in wandering atrial pacemaker reflects:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Progressive fibrosis of the SA node",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Reentry within the atrium",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Triggered activity from afterdepolarizations",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Competition between automatic foci with similar intrinsic rates",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Wandering atrial pacemaker results from the SA node and other atrial automatic foci having similar intrinsic rates, allowing the dominant pacemaker site to shift. This is often enhanced by variations in vagal tone that affect these sites differently.",
+      "clinical_pearl": "It's a 'competition' between pacemakers, not a disease process. The SA node isn't failing - other foci are just keeping up with it!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "mechanism",
+        "automaticity"
+      ]
+    },
+    {
+      "id": "atrial-005",
+      "submodule": "ectopic_atrial_tach",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "Ectopic atrial tachycardia (EAT) is characterized by which ECG finding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sawtooth flutter waves",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Abnormal P wave axis with gradual 'warm-up' at onset and 'cool-down' at termination",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "P waves buried in QRS or immediately after QRS",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Abrupt onset and termination with adenosine",
+          "is_correct": false
+        }
+      ],
+      "explanation": "EAT arises from a single automatic focus outside the SA node. The P wave morphology differs from sinus (axis depends on focus location). Unlike re-entrant SVT, EAT shows gradual acceleration at onset ('warm-up') and gradual slowing at termination ('cool-down') because it's an automatic, not re-entrant, mechanism.",
+      "clinical_pearl": "The warm-up/cool-down pattern is pathognomonic for automatic tachycardia. Re-entrant rhythms (AVRT, AVNRT, flutter) start and stop abruptly - they're 'all or nothing.'",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "automatic"
+      ]
+    },
+    {
+      "id": "atrial-006",
+      "submodule": "ectopic_atrial_tach",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 4-year-old with dilated cardiomyopathy has incessant atrial tachycardia with abnormal P waves preceding each narrow QRS. Adenosine transiently increases AV block but the tachycardia continues. What is the most likely mechanism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic ectopic atrial tachycardia",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "AVRT (orthodromic using accessory pathway)",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "AVNRT",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Atrial flutter",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Adenosine blocks the AV node, which would terminate AVRT or AVNRT (both require the AV node in the circuit). If tachycardia continues through AV block, the mechanism is purely atrial (EAT or flutter). The abnormal P waves before narrow QRS and association with cardiomyopathy suggest EAT. Flutter would show sawtooth waves.",
+      "clinical_pearl": "Adenosine is both diagnostic and therapeutic: If tachycardia terminates, it's AV node-dependent (AVRT/AVNRT). If AV block occurs but atrial rhythm continues, it's atrial tachycardia or flutter.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "adenosine",
+        "mechanism",
+        "cardiomyopathy"
+      ]
+    },
+    {
+      "id": "atrial-007",
+      "submodule": "ectopic_atrial_tach",
+      "question_type": "clinical_vignette",
+      "difficulty": 3,
+      "stem": "A 2-year-old with incessant ectopic atrial tachycardia develops heart failure with ejection fraction of 30%. What is this phenomenon called, and what is the expected outcome with successful treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tachycardia-induced cardiomyopathy; LV function typically recovers with rate control",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Dilated cardiomyopathy; irreversible damage",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Hypertrophic cardiomyopathy; may improve with beta-blockers",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Restrictive cardiomyopathy; requires transplant",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Tachycardia-induced cardiomyopathy occurs when sustained rapid heart rates lead to LV dysfunction. The cardiomyopathy is reversible - LV function typically normalizes within weeks to months once the tachycardia is controlled. This makes aggressive rhythm management crucial.",
+      "clinical_pearl": "Incessant tachycardia (present >50% of the day) can cause cardiomyopathy in weeks to months. The good news: it's reversible! Control the rate, save the heart.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "cardiomyopathy",
+        "reversible",
+        "high_yield"
+      ]
+    },
+    {
+      "id": "atrial-008",
+      "submodule": "mat",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "Multifocal atrial tachycardia (MAT) is diagnosed by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sawtooth pattern between QRS complexes",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Regular tachycardia with uniform P waves",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Absence of P waves with irregularly irregular rhythm",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Three or more P wave morphologies with irregular R-R intervals and rate >100 bpm",
+          "is_correct": true
+        }
+      ],
+      "explanation": "MAT requires: 1) At least 3 different P wave morphologies, 2) Irregular P-P and R-R intervals, 3) Rate >100 bpm. The irregular rhythm can mimic atrial fibrillation, but in MAT you can identify discrete P waves. MAT often occurs in patients with severe lung disease.",
+      "clinical_pearl": "MAT vs A-fib: Both are irregularly irregular, but MAT has visible P waves (multiple morphologies). Look carefully - if you can count P waves, it's MAT, not A-fib.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "differentiation"
+      ]
+    },
+    {
+      "id": "atrial-009",
+      "submodule": "atrial_flutter",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "The characteristic ECG pattern of typical atrial flutter is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narrow complex tachycardia with no visible P waves",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Irregularly irregular rhythm with fibrillatory baseline",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sawtooth flutter waves at 300 bpm, negative in leads II, III, aVF",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Wide QRS complexes with AV dissociation",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Typical (counterclockwise) atrial flutter produces sawtooth flutter waves that are negative in inferior leads (II, III, aVF) and positive in V1. The atrial rate is classically ~300 bpm. Ventricular rate depends on AV conduction (commonly 2:1 block = 150 bpm, 4:1 = 75 bpm).",
+      "clinical_pearl": "Flutter waves come in two flavors: Typical (counterclockwise) = negative in inferior leads. Atypical (clockwise) = positive in inferior leads. Know the classic pattern!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "basic"
+      ]
+    },
+    {
+      "id": "atrial-010",
+      "submodule": "atrial_flutter",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 2-day-old neonate has a heart rate of 150 bpm that is regular. ECG shows sawtooth waves between QRS complexes with flutter rate of 300 bpm. The neonate is feeding well. What is the most appropriate management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Observation only",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Synchronized cardioversion at 0.5-1 J/kg",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Adenosine 0.1 mg/kg IV push",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Start amiodarone infusion",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Neonatal atrial flutter is typically well-tolerated initially but can deteriorate rapidly. Cardioversion is first-line treatment in neonates and is highly effective. Adenosine will transiently increase AV block but won't terminate flutter. After cardioversion, recurrence is rare in neonates.",
+      "clinical_pearl": "Neonatal atrial flutter is a special case: cardioversion almost always works, recurrence is rare, and long-term medication is usually not needed. It's the most 'curable' atrial flutter!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "neonatal",
+        "cardioversion"
+      ]
+    },
+    {
+      "id": "atrial-011",
+      "submodule": "atrial_flutter",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 10-year-old presents with palpitations. ECG shows regular narrow complex tachycardia at exactly 150 bpm. Flutter waves are not clearly visible. What test would help confirm the diagnosis of atrial flutter with 2:1 conduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tilt table test",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Exercise stress test",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Adenosine to transiently increase AV block and reveal flutter waves",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "CT angiography",
+          "is_correct": false
+        }
+      ],
+      "explanation": "When flutter waves are hidden by QRS or T waves (especially with 2:1 conduction), adenosine can transiently increase AV block to reveal the underlying flutter waves. The 'magic number' of 150 bpm should always make you think of atrial flutter with 2:1 conduction (300\u00f72=150).",
+      "clinical_pearl": "Regular tachycardia at exactly 150 bpm = flutter until proven otherwise! Use adenosine diagnostically to unmask the flutter waves hiding under the QRS/T waves.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "diagnosis",
+        "adenosine"
+      ]
+    },
+    {
+      "id": "atrial-012",
+      "submodule": "atrial_fibrillation",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "A 16-year-old post-Fontan patient presents with fatigue. The ECG shows an irregularly irregular rhythm with no discernible P waves and a fibrillatory baseline. The ventricular rate varies between 80-140 bpm. What is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multifocal atrial tachycardia",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Atrial flutter with variable block",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Atrial fibrillation",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sinus arrhythmia with PACs",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Atrial fibrillation is characterized by three hallmark findings: (1) irregularly irregular R-R intervals with completely chaotic rhythm, (2) fibrillatory waves replacing organized P waves, and (3) absence of discernible P waves. The irregular ventricular response distinguishes it from atrial flutter which typically has more regular R-R intervals. MAT would show visible, varying P wave morphologies. A-fib is common in post-Fontan patients due to atrial scarring and dilation.",
+      "clinical_pearl": "The 'irregularly irregular' rhythm is pathognomonic for A-fib. If you can find ANY pattern to the R-R intervals, consider other diagnoses like flutter with variable block or MAT.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "chd",
+        "post_operative"
+      ]
+    },
+    {
+      "id": "atrial-013",
+      "submodule": "atrial_fibrillation",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 12-year-old status post Fontan operation presents with new-onset atrial fibrillation. Which additional concern must be addressed before cardioversion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coronary artery disease risk",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Need for permanent pacemaker",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Risk of thromboembolic stroke - need TEE or anticoagulation",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Pulmonary hypertension evaluation",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A-fib allows blood to stagnate in the atria, promoting thrombus formation. Cardioversion can dislodge clots causing stroke. For A-fib of unknown or >48 hours duration, either perform TEE to exclude thrombus or anticoagulate for 3+ weeks before cardioversion. Fontan patients are at particularly high thromboembolic risk.",
+      "clinical_pearl": "A-fib anticoagulation before cardioversion: If onset <48 hours and confirmed, may cardiovert. If >48 hours or unknown duration, need TEE or 3 weeks anticoagulation first.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "anticoagulation",
+        "chd",
+        "stroke_prevention"
+      ]
+    },
+    {
+      "id": "atrial-014",
+      "submodule": "atrial_fibrillation",
+      "question_type": "management",
+      "difficulty": 3,
+      "stem": "In pediatric patients with atrial fibrillation, which underlying condition is most commonly associated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypertension",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Congenital heart disease, especially post-operative atrial surgery",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Coronary artery disease",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sleep apnea",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Unlike adults where A-fib is often associated with hypertension/CAD, pediatric A-fib is most commonly seen with congenital heart disease (especially after atrial surgeries like Fontan, Mustard, Senning), WPW syndrome, cardiomyopathies, and myocarditis. 'Lone' A-fib is rare in children.",
+      "clinical_pearl": "A-fib in a child = look for underlying cause! Most common: CHD, WPW, cardiomyopathy. Idiopathic A-fib is so rare in children that it warrants thorough investigation.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "etiology",
+        "pediatric",
+        "chd"
+      ]
+    },
+    {
+      "id": "atrial-015",
+      "submodule": "atrial_fibrillation",
+      "question_type": "differentiation",
+      "difficulty": 2,
+      "stem": "Which feature best distinguishes atrial fibrillation from atrial flutter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flutter requires anticoagulation but A-fib does not",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "A-fib always has faster ventricular rates",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "A-fib has wide QRS complexes",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "A-fib has irregular R-R intervals and no organized atrial activity; flutter has regular flutter waves",
+          "is_correct": true
+        }
+      ],
+      "explanation": "The key distinction is atrial organization: Flutter has organized, regular atrial activity (sawtooth waves at ~300 bpm). A-fib has disorganized, chaotic atrial activity (fibrillatory waves). This leads to the irregularly irregular R-R intervals of A-fib vs. more regular (depending on AV block) rhythm in flutter.",
+      "clinical_pearl": "Flutter = organized chaos (regular atrial pattern, variable ventricular response). A-fib = pure chaos (irregular everything). Both need anticoagulation consideration!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "differentiation",
+        "ecg_criteria"
+      ]
+    },
+    {
+      "id": "atrial-016",
+      "submodule": "svt_avrt",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "In orthodromic AVRT (atrioventricular re-entrant tachycardia), the circuit involves:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antegrade conduction through AV node, retrograde through accessory pathway",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Antegrade through accessory pathway, retrograde through AV node",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Both directions through the AV node",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Both directions through the accessory pathway",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Orthodromic AVRT (the most common SVT in WPW): impulse goes DOWN through the AV node (normal pathway), then UP through the accessory pathway back to the atria. Because ventricular activation uses the normal His-Purkinje system, the QRS is narrow. The retrograde P wave appears after the QRS.",
+      "clinical_pearl": "Orthodromic = 'ortho' (correct) = uses AV node in the normal direction = narrow QRS. Antidromic = uses accessory pathway antegrade = wide QRS (pre-excited).",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "mechanism",
+        "wpw"
+      ]
+    },
+    {
+      "id": "atrial-017",
+      "submodule": "svt_avrt",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "During orthodromic AVRT, where is the retrograde P wave typically located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buried within the QRS complex",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "In the ST segment, shortly after the QRS complex",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Immediately before the QRS complex",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "P waves are absent in AVRT",
+          "is_correct": false
+        }
+      ],
+      "explanation": "In orthodromic AVRT, after ventricular activation the impulse travels retrogradely through the accessory pathway to activate the atria. This takes time (the RP interval), so the retrograde P wave appears in the ST segment, typically 70-120ms after the QRS. This distinguishes it from AVNRT where P waves are buried in or immediately after QRS.",
+      "clinical_pearl": "P wave timing helps differentiate: AVRT = P in ST segment (short RP tachycardia). AVNRT = P buried in QRS or pseudo-R' in V1, pseudo-S in inferior leads.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "differentiation"
+      ]
+    },
+    {
+      "id": "atrial-018",
+      "submodule": "svt_avrt",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 6-month-old infant presents with irritability, poor feeding, and a heart rate of 280 bpm. ECG shows narrow complex tachycardia. What is the first-line intervention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verapamil IV",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Immediate synchronized cardioversion",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Adenosine 0.3 mg/kg IV push",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Vagal maneuvers - apply ice to the face for 15-30 seconds",
+          "is_correct": true
+        }
+      ],
+      "explanation": "For SVT in a hemodynamically stable infant, vagal maneuvers are first-line. In infants, the diving reflex (ice/cold cloth to face for 15-30 seconds) is most effective. Carotid massage and Valsalva are used in older children. If vagal maneuvers fail, adenosine is second-line. Verapamil is contraindicated in infants.",
+      "clinical_pearl": "Infant SVT vagal maneuvers: Ice to face (diving reflex). Fill a bag with ice water, apply to face covering forehead-eyes-nose for 15-30 sec. Works ~50% of time. Never use carotid massage in infants!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "management",
+        "infant",
+        "vagal_maneuvers"
+      ]
+    },
+    {
+      "id": "atrial-019",
+      "submodule": "svt_avrt",
+      "question_type": "management",
+      "difficulty": 2,
+      "stem": "After vagal maneuvers fail in a stable infant with SVT, what is the appropriate adenosine dose and administration technique?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.1 mg/kg rapid IV push via large bore IV close to heart, followed by flush",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "0.5 mg/kg slow IV infusion over 2 minutes",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "0.01 mg/kg IM injection",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "0.1 mg/kg sublingual",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Adenosine has a half-life of <10 seconds, so it must be given as a rapid IV push through a large bore IV as close to the heart as possible (antecubital or above), immediately followed by a saline flush. Initial dose is 0.1 mg/kg (max 6 mg), can increase to 0.2 mg/kg (max 12 mg) if ineffective.",
+      "clinical_pearl": "Adenosine technique: Use stopcock with adenosine in one port, flush in other. Push adenosine, immediately push flush. Get the drug to the heart before it's metabolized!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "adenosine",
+        "technique"
+      ]
+    },
+    {
+      "id": "atrial-020",
+      "submodule": "svt_avnrt",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "AVNRT (AV nodal re-entrant tachycardia) involves re-entry within:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dual pathways within or near the AV node (fast and slow pathways)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "The AV node and an accessory pathway",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "The atria only",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "The bundle branches",
+          "is_correct": false
+        }
+      ],
+      "explanation": "AVNRT uses two functionally distinct pathways within/near the AV node: a fast pathway with longer refractory period and a slow pathway with shorter refractory period. In typical AVNRT, the impulse goes down the slow pathway and up the fast pathway (slow-fast), resulting in nearly simultaneous atrial and ventricular activation.",
+      "clinical_pearl": "AVNRT is the most common SVT in older children and adults. AVRT (accessory pathway) is more common in infants. Know the demographics!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "mechanism",
+        "dual_pathway"
+      ]
+    },
+    {
+      "id": "atrial-021",
+      "submodule": "svt_avnrt",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 12-year-old with recurrent SVT successfully terminated multiple times with adenosine is considering long-term management. ECG in sinus rhythm shows no pre-excitation. What options should be discussed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Activity restriction only",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pacemaker implantation",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Daily adenosine therapy",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Vagal maneuvers as needed, daily medication, or catheter ablation",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Long-term SVT management options include: 1) Pill-in-pocket approach with vagal maneuvers \u00b1 single-dose propranolol during episodes, 2) Daily prophylactic medication (beta-blocker, flecainide, etc.), 3) Catheter ablation for definitive cure. Ablation success rates are >95% for both AVNRT and AVRT.",
+      "clinical_pearl": "Ablation is curative for SVT! For older children with recurrent SVT, ablation avoids lifelong medication. Success rate >95%, complication rate <1-2%.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "management",
+        "long_term",
+        "ablation"
+      ]
+    },
+    {
+      "id": "atrial-022",
+      "submodule": "wpw",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "The classic ECG triad of Wolff-Parkinson-White syndrome in sinus rhythm includes:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Short PR interval, delta wave, and wide QRS complex",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Long PR interval, narrow QRS, and tall P waves",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Normal PR interval, delta wave, and inverted T waves",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Short PR interval, narrow QRS, and prominent U waves",
+          "is_correct": false
+        }
+      ],
+      "explanation": "WPW pattern in sinus rhythm results from pre-excitation via the accessory pathway: 1) Short PR (<120ms) because the impulse bypasses the slow AV nodal conduction, 2) Delta wave (slurred upstroke of QRS) from slow muscle-to-muscle spread, 3) Wide QRS (>100ms) as a result of the delta wave.",
+      "clinical_pearl": "WPW = 'Wire around the node.' The accessory pathway provides a shortcut that bypasses the AV node's normal delay, causing the short PR and early ventricular activation (delta wave).",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "basic",
+        "high_yield"
+      ]
+    }
+  ]
+}

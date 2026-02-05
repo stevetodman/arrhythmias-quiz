@@ -1,0 +1,159 @@
+{
+  "module": "junctional",
+  "display_name": "AV Node Rhythms",
+  "description": "Junctional beats, nodal escape, accelerated nodal rhythm, and JET",
+  "questions": [
+    {
+      "id": "junc-001",
+      "submodule": "pjc",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "Premature junctional contractions (PJCs) are characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delta wave and short PR interval",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Wide QRS complex with compensatory pause",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Narrow QRS without preceding P wave, or with retrograde P wave (inverted in II, III, aVF)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sawtooth waves between QRS complexes",
+          "is_correct": false
+        }
+      ],
+      "explanation": "PJCs arise from the AV junction, so they activate the ventricles normally (narrow QRS). The P wave may be: 1) Absent (buried in QRS), 2) Before QRS with short PR (<120ms), or 3) After QRS (retrograde). Retrograde P waves are inverted in inferior leads because atria activate from bottom to top.",
+      "clinical_pearl": "P wave location in junctional rhythms depends on relative speeds of antegrade (to ventricles) and retrograde (to atria) conduction. If retrograde is faster, P appears before QRS. If slower, P appears after QRS.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "basic",
+        "ecg_criteria"
+      ]
+    },
+    {
+      "id": "junc-002",
+      "submodule": "pjc",
+      "question_type": "clinical_vignette",
+      "difficulty": 1,
+      "stem": "A healthy 10-year-old has occasional narrow complex beats without preceding P waves on Holter monitor. The child is asymptomatic. What is the most appropriate management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Start beta-blocker therapy",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Reassurance - isolated PJCs are usually benign",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Electrophysiology study",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Restrict physical activity",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Isolated PJCs in structurally normal hearts are benign and require no treatment. Like PACs and PVCs, occasional junctional ectopy is common and clinically insignificant in asymptomatic children with normal hearts.",
+      "clinical_pearl": "Benign ectopy: PACs, PJCs, and isolated PVCs in structurally normal hearts generally don't require treatment unless frequent (>10-20% burden), symptomatic, or causing cardiomyopathy.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "benign",
+        "reassurance"
+      ]
+    },
+    {
+      "id": "junc-003",
+      "submodule": "accelerated_nodal",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 7-year-old with acute myocarditis has a heart rate of 85 bpm with narrow QRS and no visible P waves. What is the most likely rhythm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ventricular tachycardia",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sinus rhythm",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Atrial fibrillation",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Accelerated junctional rhythm",
+          "is_correct": true
+        }
+      ],
+      "explanation": "The narrow QRS at 85 bpm without P waves indicates a junctional rhythm. The rate (60-120 bpm) makes it 'accelerated' rather than escape or tachycardic. Myocarditis can cause enhanced junctional automaticity. This is usually self-limited as the inflammation resolves.",
+      "clinical_pearl": "Accelerated junctional rhythm causes: Digoxin toxicity, Myocarditis, Post-cardiac surgery, Hypoxia/ischemia. Usually resolves with treatment of underlying condition.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "myocarditis",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "junc-004",
+      "submodule": "jet",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "Junctional ectopic tachycardia (JET) is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narrow complex tachycardia (120-260 bpm) with AV dissociation and retrograde atrial capture",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Wide complex tachycardia with AV dissociation",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Irregular narrow complex tachycardia with fibrillatory baseline",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Regular sawtooth waves at 300 bpm",
+          "is_correct": false
+        }
+      ],
+      "explanation": "JET features: 1) Narrow QRS (junctional origin), 2) Very fast rate (120-260 bpm in post-op, slower in congenital), 3) AV dissociation (atrial rate slower than ventricular), 4) Occasional retrograde capture of atria. The ventricular rate exceeds atrial rate - opposite of typical SVT!",
+      "clinical_pearl": "JET diagnostic clue: Ventricular rate > Atrial rate with narrow QRS. In most tachycardias, atrial and ventricular rates are equal or atrial is faster. JET is the exception!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "av_dissociation"
+      ]
+    }
+  ]
+}

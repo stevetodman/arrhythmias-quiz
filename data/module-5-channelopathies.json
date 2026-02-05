@@ -1,0 +1,436 @@
+{
+  "module": "channelopathies",
+  "display_name": "Cardiac Channelopathies",
+  "description": "Long QT Syndrome, Short QT Syndrome, and Brugada Syndrome",
+  "questions": [
+    {
+      "id": "chan-001",
+      "submodule": "lqts_general",
+      "question_type": "mechanism",
+      "difficulty": 1,
+      "stem": "The QTc interval is calculated using Bazett's formula. Which formula correctly represents this calculation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "QTc = QT / RR interval squared",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "QTc = QT x RR interval",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "QTc = QT + RR interval",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "QTc = QT / square root of RR interval (in seconds)",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Bazett's formula corrects the QT interval for heart rate: QTc = QT / \u221aRR. The RR interval must be in seconds. This correction is necessary because QT naturally shortens at faster heart rates and lengthens at slower rates. Bazett's formula tends to overcorrect at very fast or slow rates.",
+      "clinical_pearl": "Bazett's formula overcorrects at HR <50 or >90 bpm. Consider using Fridericia's formula (QT/RR^0.33) in these cases. When in doubt, obtain ECG at normal heart rate for accurate assessment.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "calculation",
+        "basic",
+        "qtc"
+      ]
+    },
+    {
+      "id": "chan-002",
+      "submodule": "lqts_general",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "What is the upper limit of normal for QTc in children and adolescents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "380ms in females, 400ms in males",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "400ms regardless of sex",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "500ms regardless of sex",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "460ms in females, 450ms in males",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Normal QTc values differ by sex after puberty. The upper limit is 460ms for females and 450ms for males. Values between 440-460ms may be borderline and warrant monitoring. QTc >500ms is associated with significantly increased risk of Torsades de pointes.",
+      "clinical_pearl": "Remember: Females have slightly longer QTc values physiologically. QTc >500ms = high risk for Torsades. QTc 460-500ms = intermediate risk. Always measure QT from beginning of Q to end of T wave in lead II or V5.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "normal_values",
+        "basic",
+        "qtc"
+      ]
+    },
+    {
+      "id": "chan-003",
+      "submodule": "lqts_general",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "Long QT syndrome results from dysfunction of which cardiac ion channels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chloride channels only",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Calcium channels exclusively",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Potassium channels (loss of function) or sodium channels (gain of function)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sodium-potassium ATPase pump",
+          "is_correct": false
+        }
+      ],
+      "explanation": "LQTS results from prolonged ventricular repolarization. This occurs with: 1) Loss-of-function mutations in potassium channels (IKs, IKr) - reduced outward K+ current delays repolarization (LQT1, LQT2), or 2) Gain-of-function mutations in sodium channels (INa) - persistent inward Na+ current prolongs action potential (LQT3).",
+      "clinical_pearl": "Think of it as 'too little potassium leaving' (LQT1, LQT2) or 'too much sodium entering' (LQT3). Both prolong the action potential duration, which appears as prolonged QT on ECG.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "mechanism",
+        "ion_channels",
+        "genetics"
+      ]
+    },
+    {
+      "id": "chan-004",
+      "submodule": "lqts_general",
+      "question_type": "management",
+      "difficulty": 2,
+      "stem": "Which class of medications is most commonly associated with acquired QT prolongation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antiarrhythmics (Class IA and III), macrolide antibiotics, antipsychotics",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Beta-blockers and calcium channel blockers",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "ACE inhibitors and ARBs",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Loop diuretics only",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Acquired LQTS is most commonly drug-induced. High-risk medications include: Class IA antiarrhythmics (quinidine, procainamide), Class III antiarrhythmics (sotalol, amiodarone, dofetilide), macrolides (erythromycin, azithromycin), fluoroquinolones, antipsychotics (haloperidol, droperidol), antiemetics (ondansetron, metoclopramide), and many others.",
+      "clinical_pearl": "Check CredibleMeds.org for a comprehensive list of QT-prolonging drugs. Risk factors for drug-induced LQTS: female sex, hypokalemia, hypomagnesemia, bradycardia, baseline long QT, and drug combinations.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "acquired_lqts",
+        "drugs",
+        "high_yield"
+      ]
+    },
+    {
+      "id": "chan-005",
+      "submodule": "lqt1",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 10-year-old boy has a syncopal episode while swimming competitively. His ECG shows QTc of 490ms with broad-based T waves. His mother also has prolonged QT. What is the most likely LQTS subtype?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LQT2 - auditory triggers are pathognomonic",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "LQT1 - swimming and exercise are classic triggers",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "LQT3 - rest and sleep triggers predominate",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Short QT syndrome",
+          "is_correct": false
+        }
+      ],
+      "explanation": "LQT1 events are characteristically triggered by exercise, particularly swimming. Swimming is an especially high-risk activity because it combines physical exertion, catecholamine surge, facial immersion reflex, and inability to escape if syncope occurs. The broad-based T waves are typical of LQT1 ECG morphology.",
+      "clinical_pearl": "Swimming is the highest-risk activity for LQT1 patients - it accounts for a disproportionate number of fatal and near-fatal events. LQT1 patients should avoid competitive swimming and never swim alone.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "lqt1",
+        "swimming",
+        "triggers"
+      ]
+    },
+    {
+      "id": "chan-006",
+      "submodule": "lqt1",
+      "question_type": "differentiation",
+      "difficulty": 3,
+      "stem": "What distinguishes Romano-Ward syndrome from Jervell and Lange-Nielsen syndrome (JLNS)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "JLNS responds better to beta-blockers than Romano-Ward",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Romano-Ward is associated with deafness; JLNS has normal hearing",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "JLNS has autosomal recessive inheritance with congenital sensorineural deafness and more severe phenotype",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Romano-Ward is X-linked recessive",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Both involve KCNQ1 mutations. Romano-Ward syndrome is autosomal dominant LQTS with normal hearing. Jervell and Lange-Nielsen syndrome is autosomal recessive, requires homozygous or compound heterozygous KCNQ1 mutations, and includes congenital sensorineural deafness. JLNS has a more severe phenotype with longer QTc and higher event rate.",
+      "clinical_pearl": "JLNS = deaf + LQTS + autosomal recessive + severe phenotype. If you see LQTS + hearing loss, think JLNS. These patients often need ICD in addition to beta-blockers due to higher risk.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "jlns",
+        "romano_ward",
+        "genetics"
+      ]
+    },
+    {
+      "id": "chan-007",
+      "submodule": "lqt2",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 14-year-old girl experiences syncope when her alarm clock rings suddenly in the morning. ECG shows QTc of 510ms with notched T waves in the precordial leads. What is the most likely LQTS subtype?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LQT1 - exercise triggers predominate",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "LQT2 - auditory triggers and notched T waves are characteristic",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "LQT3 - sleep and rest triggers",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Brugada syndrome",
+          "is_correct": false
+        }
+      ],
+      "explanation": "LQT2 events are characteristically triggered by sudden auditory stimuli (alarm clocks, telephone ringing, startling noises), emotional stress, and the postpartum period. The notched or bifid T waves (often with low amplitude) are the classic ECG morphology. Auditory triggers + notched T waves strongly suggest LQT2.",
+      "clinical_pearl": "LQT2 triggers: Auditory startle (alarm clocks, phone), emotional stress, postpartum. Practical advice: Replace alarm clocks with vibrating alarms, avoid startling ringtones, postpartum monitoring.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "lqt2",
+        "auditory_triggers",
+        "clinical"
+      ]
+    },
+    {
+      "id": "chan-008",
+      "submodule": "lqt3",
+      "question_type": "management",
+      "difficulty": 3,
+      "stem": "Which medication, in addition to beta-blockers, may provide specific benefit in LQT3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mexiletine - a sodium channel blocker that shortens QT",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Verapamil - a calcium channel blocker",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Potassium supplements",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Quinidine - a Class IA antiarrhythmic",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Mexiletine (Class IB sodium channel blocker) specifically targets the pathophysiology of LQT3 by blocking the persistent late sodium current. It has been shown to shorten QTc in LQT3 patients. This is genotype-specific therapy. Beta-blockers are less effective in LQT3 than LQT1 because events occur at rest, not with catecholamine surge.",
+      "clinical_pearl": "LQT3-specific therapy: Mexiletine blocks late INa, shortening QT. Beta-blockers less effective because triggers are rest/sleep, not sympathetic. Many LQT3 patients need ICD + mexiletine.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "mexiletine",
+        "lqt3",
+        "management"
+      ]
+    },
+    {
+      "id": "chan-009",
+      "submodule": "brugada",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "What is the characteristic ECG pattern of Type 1 Brugada syndrome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coved ST elevation \u22652mm in V1-V3 followed by negative T wave",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Saddleback ST elevation with positive T wave in V1-V3",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Notched T waves with prolonged QTc",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Delta waves with short PR interval",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Type 1 Brugada pattern is diagnostic and shows coved-type ST elevation \u22652mm in V1-V3 (right precordial leads) with negative T wave. The ST segment appears to 'dome' upward then immediately descend into a negative T wave. Type 2 (saddleback) is suggestive but not diagnostic and requires provocation testing.",
+      "clinical_pearl": "Brugada Type 1 = 'coved' (diagnostic). Type 2 = 'saddleback' (needs drug provocation). Remember: coved looks like a shark fin rising and falling; saddleback looks like a saddle with a bump up, down, then up again.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "brugada",
+        "type1"
+      ]
+    },
+    {
+      "id": "chan-010",
+      "submodule": "brugada",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "Brugada syndrome is caused by mutations in which gene, and what is the functional effect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "KCNQ1 causing loss-of-function in potassium channels",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "SCN5A causing loss-of-function in the cardiac sodium channel",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "SCN5A causing gain-of-function in sodium channels",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "KCNH2 causing gain-of-function in potassium channels",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Brugada syndrome is most commonly caused by loss-of-function mutations in SCN5A (~20-30% of cases). Reduced sodium current causes heterogeneous repolarization in the right ventricular outflow tract (RVOT), creating the substrate for phase 2 reentry and VF. This is the opposite of LQT3 (SCN5A gain-of-function).",
+      "clinical_pearl": "SCN5A loss-of-function = Brugada (reduced peak INa). SCN5A gain-of-function = LQT3 (persistent late INa). Same gene, opposite effects! Most Brugada cases have no identifiable mutation (gene-elusive).",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "genetics",
+        "brugada",
+        "scn5a"
+      ]
+    },
+    {
+      "id": "chan-011",
+      "submodule": "brugada",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 35-year-old Southeast Asian male presents after nocturnal cardiac arrest. He has no structural heart disease. His ECG shows coved ST elevation in V1-V2 with negative T waves. What is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LQT3",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Acute anterior STEMI",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Brugada syndrome",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Pericarditis",
+          "is_correct": false
+        }
+      ],
+      "explanation": "This presentation is classic for Brugada syndrome: Southeast Asian male (8-10x more common in Asian populations), nocturnal cardiac arrest (events occur at rest/during sleep), structurally normal heart, and Type 1 Brugada ECG pattern. The pattern is prominent in V1-V2 (right precordial leads).",
+      "clinical_pearl": "Brugada epidemiology: 8-10x more common in males, particularly prevalent in Southeast Asia (Thailand, Philippines - 'Lai Tai' or 'Bangungut' - sudden nocturnal death syndrome). Events typically occur during sleep or at rest.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "diagnosis",
+        "brugada",
+        "epidemiology"
+      ]
+    }
+  ]
+}

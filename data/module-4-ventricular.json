@@ -1,0 +1,581 @@
+{
+  "module": "ventricular",
+  "display_name": "Ventricular Arrhythmias",
+  "description": "PVCs, accelerated ventricular rhythm, VT, torsades, and VFib",
+  "questions": [
+    {
+      "id": "vent-001",
+      "submodule": "pvc",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "Premature ventricular contractions (PVCs) are characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wide QRS (>80-100ms in children) with no preceding P wave and compensatory pause",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Narrow QRS with abnormal P wave morphology",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Delta wave and short PR interval",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sawtooth pattern in the baseline",
+          "is_correct": false
+        }
+      ],
+      "explanation": "PVCs arise below the bundle of His, causing abnormal ventricular depolarization that appears as a wide, bizarre QRS complex. There's no preceding P wave because the impulse originates in the ventricle. The compensatory pause is usually 'full' (interval containing PVC equals 2x baseline R-R) because the PVC doesn't reset the SA node.",
+      "clinical_pearl": "PVC QRS width: Adult >120ms, Child >80-100ms (depending on age). The wide QRS reflects slow cell-to-cell conduction rather than rapid His-Purkinje conduction.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "basic",
+        "ecg_criteria"
+      ]
+    },
+    {
+      "id": "vent-002",
+      "submodule": "pvc",
+      "question_type": "clinical_vignette",
+      "difficulty": 1,
+      "stem": "A healthy 8-year-old has occasional PVCs (<1% burden) on Holter monitor. Echo is normal. The child is asymptomatic. What is the most appropriate management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Start beta-blocker therapy",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Reassurance - isolated PVCs in structurally normal hearts are usually benign",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Refer for catheter ablation",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Restrict all physical activity",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Isolated, unifocal PVCs in children with structurally normal hearts and low burden (<5-10%) are typically benign. No treatment or activity restriction is needed. Follow-up echo may be reasonable to ensure ongoing normal LV function if PVCs persist.",
+      "clinical_pearl": "Benign PVC features: Unifocal, disappear with exercise, no symptoms, normal heart, low burden (<10%). Concerning features: Multifocal, increase with exercise, symptoms, structural disease, high burden (>20%).",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "benign",
+        "reassurance"
+      ]
+    },
+    {
+      "id": "vent-003",
+      "submodule": "pvc",
+      "question_type": "differentiation",
+      "difficulty": 2,
+      "stem": "Which feature distinguishes a PVC from an aberrantly conducted PAC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PVC is always followed by a T wave of opposite polarity",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "PVC always has a narrower QRS",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Aberrant PAC always has a compensatory pause",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "PVC has no preceding P wave and typically has LBBB morphology or bizarre appearance",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Key differences: 1) PVC has no preceding P wave; aberrant PAC has a premature P wave (may be in T wave), 2) Aberrant PAC typically shows RBBB morphology (right bundle has longer refractory period); PVC morphology varies by origin but often shows LBBB pattern if from RV, 3) PVC has full compensatory pause; PAC has incomplete pause.",
+      "clinical_pearl": "Search for the hidden P wave! If you find a premature P distorting the preceding T wave followed by a wide QRS, it's aberrancy, not a PVC.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "differentiation",
+        "aberrancy"
+      ]
+    },
+    {
+      "id": "vent-004",
+      "submodule": "pvc",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "PVCs occurring every other beat is termed:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Couplets",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ventricular trigeminy",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ventricular bigeminy",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Non-sustained VT",
+          "is_correct": false
+        }
+      ],
+      "explanation": "PVC patterns: Bigeminy = every other beat is a PVC, Trigeminy = every third beat is a PVC, Couplets = two PVCs in a row, Triplets = three PVCs in a row. Three or more consecutive PVCs at rate >100 bpm is ventricular tachycardia.",
+      "clinical_pearl": "Pattern terminology: Bi- = every 2nd beat, Tri- = every 3rd beat, Quadri- = every 4th beat. Couplet = 2 in a row, NSVT = 3+ in a row (<30 sec), Sustained VT = >30 sec or requiring intervention.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "terminology",
+        "ecg_criteria"
+      ]
+    },
+    {
+      "id": "vent-005",
+      "submodule": "pvc",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 14-year-old athlete with palpitations has 25% PVC burden on Holter. Echo shows borderline low EF of 50%. What is the most concerning finding and recommended action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The EF is normal; reassurance only",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "This is a normal finding in athletes; no action needed",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "High PVC burden may be causing LV dysfunction; consider treatment with beta-blockers or ablation",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Immediate ICD implantation is indicated",
+          "is_correct": false
+        }
+      ],
+      "explanation": "High PVC burden (>10-20%) can cause PVC-induced cardiomyopathy, which is reversible with successful treatment. The borderline EF suggests early cardiomyopathy. Treatment options include beta-blockers or catheter ablation. With successful PVC suppression, LV function typically normalizes.",
+      "clinical_pearl": "PVC-induced cardiomyopathy threshold: Generally >10-20% burden, though some patients are more susceptible. The good news: it's reversible! Suppress the PVCs, save the heart.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "cardiomyopathy",
+        "high_yield"
+      ]
+    },
+    {
+      "id": "vent-006",
+      "submodule": "pvc",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "What does it mean when PVCs are described as 'unifocal'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All PVCs have identical morphology, suggesting single site of origin",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "PVCs occur in only one lead",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Only one PVC is seen on the entire recording",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "PVCs are suppressed with exercise",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Unifocal PVCs all look the same because they originate from the same ventricular location. Multifocal PVCs have different morphologies, indicating multiple sites of origin - this is generally more concerning and may indicate more diffuse myocardial disease.",
+      "clinical_pearl": "Unifocal = benign feature. Multifocal = concerning feature. When evaluating PVCs, always report: unifocal vs multifocal, frequency/burden, patterns (couplets, runs), and response to exercise.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "terminology",
+        "prognosis"
+      ]
+    },
+    {
+      "id": "vent-007",
+      "submodule": "pvc",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "An asymptomatic 10-year-old has exercise testing. At rest, frequent PVCs are seen. During exercise, PVCs completely disappear. What does this suggest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High-risk PVCs requiring immediate treatment",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Benign PVCs - suppression with exercise is reassuring",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Catecholaminergic polymorphic VT",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Underlying structural heart disease",
+          "is_correct": false
+        }
+      ],
+      "explanation": "PVCs that suppress with exercise (when sinus rate exceeds PVC focus rate) are generally benign. PVCs that increase or become more complex with exercise are more concerning and may indicate catecholaminergic VT or arrhythmogenic cardiomyopathy. Exercise testing is useful for risk stratification.",
+      "clinical_pearl": "Exercise testing for PVCs: Suppression with exercise = reassuring. New or worsening PVCs with exercise = concerning for CPVT or structural disease. Always include exercise testing in the workup!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "exercise_testing",
+        "prognosis"
+      ]
+    },
+    {
+      "id": "vent-008",
+      "submodule": "vt",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 15-year-old with known hypertrophic cardiomyopathy has wide complex tachycardia at 180 bpm. Blood pressure is 70/50 mmHg and the patient is confused. What is the most appropriate immediate treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amiodarone 150mg IV over 10 minutes",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Adenosine 6mg IV push",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Synchronized cardioversion",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Vagal maneuvers",
+          "is_correct": false
+        }
+      ],
+      "explanation": "This patient has unstable VT (hypotension, altered mental status) in the setting of structural heart disease. Immediate synchronized cardioversion is indicated. Adenosine is not first-line for wide complex tachycardia and vagal maneuvers won't work for VT. Amiodarone takes too long for an unstable patient.",
+      "clinical_pearl": "Unstable wide complex tachycardia = synchronized cardioversion NOW. Signs of instability: Hypotension, Altered mental status, Chest pain, Acute heart failure. Don't delay for diagnosis or drugs!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "emergency",
+        "cardioversion",
+        "high_yield"
+      ]
+    },
+    {
+      "id": "vent-009",
+      "submodule": "vt",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "What differentiates monomorphic VT from polymorphic VT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monomorphic is always faster than polymorphic",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Monomorphic has uniform QRS morphology; polymorphic has beat-to-beat QRS variation",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Polymorphic is always associated with structural heart disease",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Monomorphic requires cardioversion; polymorphic requires defibrillation",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monomorphic VT has consistent QRS morphology throughout (stable reentrant circuit). Polymorphic VT shows continuously changing QRS complexes (shifting activation, often more unstable). Polymorphic VT with prolonged QT is called Torsades de Pointes. Polymorphic VT is generally more dangerous.",
+      "clinical_pearl": "Polymorphic VT significance: Check the baseline QT! If QTc is prolonged \u2192 Torsades (treat with magnesium, avoid QT-prolonging drugs). If QTc is normal \u2192 usually ischemia or CPVT.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "classification",
+        "ecg_criteria"
+      ]
+    },
+    {
+      "id": "vent-010",
+      "submodule": "torsades",
+      "question_type": "ecg_recognition",
+      "difficulty": 2,
+      "stem": "Torsades de pointes is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Regular sawtooth pattern",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Monomorphic wide complex tachycardia at 150 bpm",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Irregular narrow complex tachycardia",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Polymorphic VT with twisting QRS axis around the baseline and prolonged baseline QTc",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Torsades de pointes ('twisting of the points') is polymorphic VT characterized by: 1) QRS complexes that appear to twist around the isoelectric baseline, 2) Occurs in the setting of prolonged QT interval (acquired or congenital LQTS), 3) Often initiated by a PVC with long-short sequence.",
+      "clinical_pearl": "Torsades = polymorphic VT + long QT. The treatment is different from typical VT! Magnesium is first-line, plus address the underlying QT prolongation.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "long_qt"
+      ]
+    },
+    {
+      "id": "vent-011",
+      "submodule": "torsades",
+      "question_type": "management",
+      "difficulty": 2,
+      "stem": "A patient with drug-induced QT prolongation develops Torsades de pointes and is hemodynamically stable with brief, self-terminating episodes. What is the most appropriate treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IV magnesium sulfate, stop offending drug, correct electrolytes, consider overdrive pacing",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Amiodarone IV loading dose",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Procainamide IV infusion",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Verapamil IV",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Torsades treatment differs from typical VT! 1) IV Magnesium 25-50 mg/kg (even with normal Mg levels), 2) Stop QT-prolonging drugs, 3) Correct K+ to high-normal (4.5-5 mEq/L), 4) If persistent, overdrive pacing (shortens QT). Avoid Class I/III antiarrhythmics (amiodarone, procainamide) - they prolong QT!",
+      "clinical_pearl": "Torsades treatment: Magnesium, Magnesium, Magnesium! Also: stop offending drug, correct K+ to high-normal, overdrive pace if needed. DON'T give typical antiarrhythmics - they make it worse!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "management",
+        "magnesium",
+        "high_yield"
+      ]
+    },
+    {
+      "id": "vent-012",
+      "submodule": "vfib",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "Ventricular fibrillation is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete absence of electrical activity (flat line)",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Regular wide complex tachycardia at 200 bpm",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Narrow complex tachycardia with visible P waves",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Chaotic, irregular waveforms with no identifiable QRS complexes",
+          "is_correct": true
+        }
+      ],
+      "explanation": "VF shows completely chaotic, irregular electrical activity with no organized QRS complexes. The amplitude may be coarse (higher amplitude, better prognosis for successful defibrillation) or fine (lower amplitude, worse prognosis). VF produces no cardiac output - it's a form of cardiac arrest.",
+      "clinical_pearl": "VF vs asystole: VF = chaotic activity (defibrillate!). Asystole = flat line (CPR + epinephrine, check lead placement). VF has better prognosis if defibrillated quickly.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "ecg_criteria",
+        "cardiac_arrest"
+      ]
+    },
+    {
+      "id": "vent-013",
+      "submodule": "vfib",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "What is the underlying electrophysiologic mechanism of ventricular fibrillation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multiple wandering reentrant wavelets causing chaotic, disorganized ventricular activation",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Single stable reentrant circuit",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Enhanced automaticity of a single focus",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Complete AV nodal block",
+          "is_correct": false
+        }
+      ],
+      "explanation": "VF represents the ultimate breakdown of organized electrical activity. Multiple reentrant wavelets wander through the ventricle in a chaotic pattern, constantly splitting and colliding. No organized contraction can occur, resulting in no cardiac output. Defibrillation works by simultaneously depolarizing all cells, allowing organized activity to resume.",
+      "clinical_pearl": "Defibrillation = 'electrical reset.' By depolarizing everything at once, it gives the SA node a chance to resume control. The key is delivering enough energy to capture all the chaotic wavelets.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "mechanism",
+        "reentry"
+      ]
+    },
+    {
+      "id": "vent-014",
+      "submodule": "vfib",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 16-year-old has sudden cardiac arrest during basketball, resuscitated from VF. Echo shows asymmetric septal hypertrophy. What is the most likely underlying diagnosis and long-term management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dilated cardiomyopathy; heart transplant evaluation",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Hypertrophic cardiomyopathy; ICD implantation for secondary prevention",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Commotio cordis; no further intervention needed",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Long QT syndrome; beta-blocker therapy only",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Hypertrophic cardiomyopathy (HCM) is the leading cause of sudden cardiac death in young athletes in the US. Asymmetric septal hypertrophy is classic. Survivors of SCA require ICD for secondary prevention (very high recurrence risk). Family screening is also essential.",
+      "clinical_pearl": "Causes of SCA in young athletes (US): HCM most common, then ARVC, anomalous coronaries, channelopathies, commotio cordis. All survivors need thorough workup and usually ICD.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "hcm",
+        "icd",
+        "secondary_prevention"
+      ]
+    },
+    {
+      "id": "vent-015",
+      "submodule": "vfib",
+      "question_type": "clinical_vignette",
+      "difficulty": 3,
+      "stem": "A 14-year-old is struck in the chest by a baseball and immediately collapses. CPR is started and AED reveals VF. The patient is successfully defibrillated. Echo and ECG are normal. What is the diagnosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brugada syndrome",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Hypertrophic cardiomyopathy",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Commotio cordis - VF triggered by mechanical impact during vulnerable period",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Blunt cardiac injury with contusion",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Commotio cordis is VF triggered by blunt chest impact during the vulnerable period of repolarization (T wave). It typically occurs with projectiles (baseball, hockey puck, lacrosse ball) in young males. Cardiac evaluation is normal. Most survive if defibrillated within 3 minutes. Prevention: chest protectors in at-risk sports.",
+      "clinical_pearl": "Commotio cordis window: Impact must occur during the ascending T wave (~20-30ms vulnerable period). It's about timing, not impact force. Chest protectors don't completely prevent it.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "commotio_cordis",
+        "sports",
+        "diagnosis"
+      ]
+    }
+  ]
+}

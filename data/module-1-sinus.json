@@ -1,0 +1,467 @@
+{
+  "module": "sinus",
+  "display_name": "Sinus Rhythms",
+  "description": "Normal sinus rhythm, sinus tachycardia, bradycardia, arrhythmia, and sick sinus syndrome",
+  "questions": [
+    {
+      "id": "sinus-001",
+      "submodule": "normal_sinus_rhythm",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "Which of the following is a characteristic of normal sinus rhythm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P wave after QRS complex in all leads",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "P wave inverted in lead II with variable PR interval",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "No visible P waves with narrow QRS complexes",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "P wave upright in leads I, II, and aVF with consistent PR interval",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Normal sinus rhythm originates from the SA node, producing P waves that are upright in leads I, II, and aVF (and inverted in aVR). The PR interval is consistent because conduction through the AV node is constant. The SA node location causes the atrial depolarization vector to point inferiorly and leftward.",
+      "clinical_pearl": "Remember: In NSR, P waves are 'upright where they should be' - positive in inferior leads (II, III, aVF) because atrial activation travels downward from the superior SA node.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "basic",
+        "ecg_criteria"
+      ]
+    },
+    {
+      "id": "sinus-002",
+      "submodule": "normal_sinus_rhythm",
+      "question_type": "mechanism",
+      "difficulty": 1,
+      "stem": "The sinoatrial (SA) node is considered the primary pacemaker of the heart because it:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Has the strongest contractile force",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Has the fastest intrinsic depolarization rate",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Receives the most blood supply",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Is located closest to the left ventricle",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The SA node has the fastest intrinsic rate of automaticity (60-100 bpm in adults, higher in children) due to its unique ion channel properties. This allows it to reach threshold before other potential pacemakers (AV node at 40-60 bpm, ventricles at 20-40 bpm), effectively 'overdrive suppressing' subsidiary pacemakers.",
+      "clinical_pearl": "The hierarchy of pacemakers (SA > AV > His-Purkinje) provides redundancy. If the SA node fails, lower pacemakers can take over, though at slower rates.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "basic",
+        "physiology"
+      ]
+    },
+    {
+      "id": "sinus-003",
+      "submodule": "normal_sinus_rhythm",
+      "question_type": "clinical_vignette",
+      "difficulty": 1,
+      "stem": "A healthy 8-year-old presents for a sports physical. The resting ECG shows a heart rate of 85 bpm with upright P waves preceding each QRS complex in leads II, III, and aVF. The PR interval is 140 ms. What is the most appropriate interpretation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atrial rhythm",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sinus tachycardia",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Normal sinus rhythm",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "First-degree AV block",
+          "is_correct": false
+        }
+      ],
+      "explanation": "This ECG demonstrates normal sinus rhythm: regular rate of 85 bpm (normal for age), upright P waves in inferior leads indicating SA node origin, and normal PR interval (120-200 ms). Normal heart rate ranges by age: newborn 120-160, infant 80-140, child 75-100, adolescent 60-100 bpm.",
+      "clinical_pearl": "Age-appropriate normal values are crucial in pediatrics. An HR of 85 would be bradycardic in a newborn but normal in a school-age child.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "pediatric",
+        "normal_values"
+      ]
+    },
+    {
+      "id": "sinus-004",
+      "submodule": "sinus_tachycardia",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 3-year-old with fever of 39.5\u00b0C presents with a heart rate of 160 bpm. The ECG shows upright P waves in lead II preceding each QRS complex. What is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sinus tachycardia due to fever",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Supraventricular tachycardia",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Atrial flutter with 2:1 block",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ventricular tachycardia",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Sinus tachycardia with an identifiable cause (fever) and normal P wave morphology is most likely. Heart rate increases approximately 10 bpm per degree Celsius of fever. The visible sinus P waves preceding each QRS confirm sinus origin rather than SVT.",
+      "clinical_pearl": "Common causes of sinus tachycardia: Fever, Anxiety, Anemia, Hypovolemia/dehydration, Pain, Medications (albuterol, caffeine). Treatment is to address the underlying cause.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "pediatric",
+        "fever"
+      ]
+    },
+    {
+      "id": "sinus-005",
+      "submodule": "sinus_tachycardia",
+      "question_type": "differentiation",
+      "difficulty": 2,
+      "stem": "A 6-month-old infant presents with a heart rate of 280 bpm. Which finding would most strongly suggest SVT rather than sinus tachycardia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narrow QRS complexes",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Abrupt termination with vagal maneuvers",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Mild hepatomegaly",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Normal blood pressure",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Abrupt termination with vagal maneuvers (ice to face in infants) is characteristic of re-entrant SVT involving the AV node. Sinus tachycardia gradually slows with vagal maneuvers but doesn't abruptly terminate. The rate of 280 bpm is also more consistent with SVT in an infant.",
+      "clinical_pearl": "In infants, SVT rates are typically 220-300 bpm, while sinus tach rarely exceeds 220 bpm. Abrupt onset/offset is pathognomonic for SVT.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "differentiation",
+        "infant",
+        "svt"
+      ]
+    },
+    {
+      "id": "sinus-006",
+      "submodule": "sinus_bradycardia",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "Sinus bradycardia is defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absence of P waves with slow ventricular rate",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Any rhythm with rate below 60 bpm",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sinus rhythm with rate below the age-appropriate lower limit",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Heart rate below 100 bpm in infants",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Sinus bradycardia is sinus rhythm (normal P wave morphology, consistent PR interval) at a rate below the age-appropriate normal range. What's considered 'brady' varies by age: <100 in newborns, <60 in adolescents.",
+      "clinical_pearl": "Age-specific bradycardia thresholds: Newborn <100 bpm, Infant <80 bpm, Child <70 bpm, Adolescent/Adult <60 bpm.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "definition",
+        "pediatric"
+      ]
+    },
+    {
+      "id": "sinus-007",
+      "submodule": "sinus_bradycardia",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A healthy 16-year-old competitive swimmer has a resting heart rate of 48 bpm. The ECG shows sinus rhythm with no other abnormalities. The patient is asymptomatic. What is the most appropriate management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Start atropine therapy",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Immediate pacemaker evaluation",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Discontinue athletic training",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Reassurance - this is normal athletic bradycardia",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Athletic bradycardia is a normal physiologic adaptation to regular aerobic exercise, resulting from increased vagal tone and cardiac efficiency. Rates in the 40s are common in well-trained athletes and require no treatment if asymptomatic.",
+      "clinical_pearl": "Athletic bradycardia is benign and reflects cardiovascular fitness. Consider pathology only if symptomatic (syncope, exercise intolerance) or if bradycardia doesn't increase appropriately with exercise.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "athlete",
+        "benign"
+      ]
+    },
+    {
+      "id": "sinus-008",
+      "submodule": "sinus_bradycardia",
+      "question_type": "mechanism",
+      "difficulty": 2,
+      "stem": "A 12-year-old on digoxin therapy for heart failure presents with a heart rate of 50 bpm. Which mechanism best explains digoxin-induced bradycardia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calcium channel inhibition",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Direct myocardial depression",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Beta-receptor blockade",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Enhanced vagal tone and direct SA node suppression",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Digoxin causes bradycardia through two mechanisms: enhanced parasympathetic (vagal) tone and direct suppression of SA node automaticity. It also slows AV nodal conduction, which can progress to heart block at toxic levels.",
+      "clinical_pearl": "Medications causing bradycardia: Digoxin, Beta-blockers, Calcium channel blockers (non-DHP), Amiodarone, Opioids. Always check medication list!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "pharmacology",
+        "digoxin"
+      ]
+    },
+    {
+      "id": "sinus-009",
+      "submodule": "sinus_bradycardia",
+      "question_type": "clinical_vignette",
+      "difficulty": 3,
+      "stem": "A 10-year-old with head trauma has progressive bradycardia (currently 45 bpm), hypertension, and irregular respirations. What is the most likely cause of the bradycardia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cushing reflex from increased intracranial pressure",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Vagal response from pain",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Hemorrhagic shock",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Medication effect",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cushing's triad (bradycardia, hypertension, irregular respirations) indicates severely elevated intracranial pressure. This is a medical emergency requiring immediate neurosurgical evaluation. The bradycardia results from brainstem compression affecting the vagal nuclei.",
+      "clinical_pearl": "Cushing's triad is a late and ominous sign of increased ICP - often seen just before herniation. Don't wait for all three components to act!",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "emergency",
+        "neurology",
+        "high_yield"
+      ]
+    },
+    {
+      "id": "sinus-010",
+      "submodule": "sinus_arrhythmia",
+      "question_type": "ecg_recognition",
+      "difficulty": 1,
+      "stem": "A 7-year-old healthy child has an ECG showing sinus rhythm with R-R interval variation that increases with inspiration and decreases with expiration. What is the diagnosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respiratory sinus arrhythmia",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Wandering atrial pacemaker",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sick sinus syndrome",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Second-degree AV block",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Respiratory sinus arrhythmia is phasic variation in heart rate that corresponds to breathing: rate increases with inspiration (decreased vagal tone) and decreases with expiration. P wave morphology remains constant. This is extremely common and normal in children.",
+      "clinical_pearl": "Respiratory sinus arrhythmia is a sign of good vagal tone and cardiovascular health. Its ABSENCE in children may actually be more concerning. It diminishes with age.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "benign",
+        "pediatric",
+        "normal_variant"
+      ]
+    },
+    {
+      "id": "sinus-011",
+      "submodule": "sinus_pause",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 14-year-old experiences brief dizziness during a blood draw. Telemetry shows a 2.5-second sinus pause followed by normal sinus rhythm. The patient is now asymptomatic. What is the most appropriate management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Permanent pacemaker implantation",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Reassurance - this is vasovagal in origin",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Start atropine infusion",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Electrophysiology study",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A sinus pause in the setting of a clear vagal trigger (blood draw, pain, fear) that resolves spontaneously and doesn't recur is vasovagal in origin. Pauses up to 3 seconds during vagal stimulation are generally considered benign and don't require intervention if asymptomatic after the event.",
+      "clinical_pearl": "Pauses during obvious vagal triggers (vomiting, straining, venipuncture) are usually benign. Concern increases for pauses >3 seconds, recurrent unprovoked pauses, or pauses causing significant symptoms.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "vasovagal",
+        "benign"
+      ]
+    },
+    {
+      "id": "sinus-012",
+      "submodule": "sick_sinus_syndrome",
+      "question_type": "clinical_vignette",
+      "difficulty": 2,
+      "stem": "A 10-year-old who had a Fontan operation for single ventricle presents with fatigue. Holter monitor shows alternating periods of sinus bradycardia (40 bpm) and atrial tachycardia (160 bpm). What is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wolff-Parkinson-White syndrome",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Atrial flutter with variable block",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sick sinus syndrome (tachy-brady syndrome)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Normal post-operative finding",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Sick sinus syndrome (SSS) is particularly common after extensive atrial surgery for congenital heart disease (Fontan, Mustard, Senning). Tachy-brady syndrome - alternating inappropriate bradycardia and atrial tachyarrhythmias - is a hallmark presentation. Requires careful management as treating one component may worsen the other.",
+      "clinical_pearl": "SSS in CHD patients often presents years after surgery. Post-Fontan patients are at especially high risk. Treatment typically requires pacemaker + antiarrhythmic drugs.",
+      "references": [
+        "Park's Pediatric Cardiology 7th Ed, Chapter 24"
+      ],
+      "tags": [
+        "chd",
+        "post_operative",
+        "high_yield"
+      ]
+    }
+  ]
+}
